@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context=".ProfileActivity">
+    <include layout="@layout/toolbar"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@color/green_606">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:src="@tools:sample/avatars"
+            android:layout_centerInParent="true"/>
+
+        <TextView
+            android:id="@+id/profile_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/profile_username"
+            android:fontFamily="@font/abeezee_reguler"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:textSize="23dp"
+            android:layout_marginBottom="15dp"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Edit Profile"
+        android:fontFamily="@font/abeezee_reguler"
+        android:textStyle="bold"
+        android:textSize="23dp"
+        android:padding="@dimen/_14sdp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_30sdp"
+        android:orientation="vertical"
+        android:layout_marginTop="-40dp"
+        android:layout_marginStart="-25dp"
+        android:layout_marginEnd="@dimen/_15sdp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/isian_orange_1"
+            android:layout_gravity="center"/>
+
+        <EditText
+            android:id="@+id/changeUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="@font/abeezee_reguler"
+            android:minHeight="50dp"
+            android:hint="Username"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/isian_orange_1"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"/>
+
+        <EditText
+            android:id="@+id/changeName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="@font/abeezee_reguler"
+            android:minHeight="50dp"
+            android:hint="Nama"
+            android:inputType="textPersonName"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/isian_orange_1"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"/>
+
+        <EditText
+            android:id="@+id/changeEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="@font/abeezee_reguler"
+            android:minHeight="50dp"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/isian_orange_1"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"/>
+
+        <EditText
+            android:id="@+id/changePassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="@font/abeezee_reguler"
+            android:minHeight="50dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/isian_orange_1"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"/>
+
+        <EditText
+            android:id="@+id/changePasswordConfirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="@font/abeezee_reguler"
+            android:minHeight="50dp"
+            android:hint="Konfirmasi ulang password"
+            android:inputType="textPassword"
+            android:textSize="15sp" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/button_hijautua_1"/>
+
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/simpan"
+                android:layout_marginStart="@dimen/_6sdp"
+                android:textColor="@color/green_606"
+                android:background="@color/transparant"
+                android:fontFamily="@font/francois_one"/>
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

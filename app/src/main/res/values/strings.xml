@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Nampung Jabar</string>
+    <string name="retry_password">Ulang password</string>
+    <string name="fill_password">Isikan password</string>
+    <string name="fill_email">Isikan email</string>
+    <string name="fill_username">Isikan username</string>
+    <string name="register">Register</string>
+    <string name="login">Login</string>
+    <string name="masuk">Masuk</string>
+    <string name="daftar">Daftar</string>
+    <string name="text_login_failed">Oops, kamu belum memiliki akun \n Login untuk masuk atau Registrasi jika belum memiliki akun</string>
+    <string name="login_username">Masukkan username</string>
+    <string name="login_password">Masukkan password</string>
+    <string name="nampung_jabar">Nampung Jabar</string>
+    <string name="heading_1">Liburan ke Desa Wisata</string>
+    <string name="desawisata_name">Nama Desa Wisata</string>
+    <string name="profile_username">Username Pengguna</string>
+    <string name="simpan">Simpan</string>
+</resources>

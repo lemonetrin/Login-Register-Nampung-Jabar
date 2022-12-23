@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context=".HomeActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="30dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/isian_orange_1"
+                    android:layout_gravity="center"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_search_24"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="5dp"/>
+
+                <EditText
+                    android:id="@+id/loginUsername"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-5dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:fontFamily="@font/abeezee_reguler"
+                    android:minHeight="50dp"
+                    android:hint="Search ..."
+                    android:textSize="15sp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-40dp"
+                android:padding="30dp">
+
+                <ImageView
+                    android:id="@+id/foto_heading_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/foto_desawisata_1"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/heading_1"
+                    android:fontFamily="@font/abeezee_reguler"
+                    android:textColor="@color/white"
+                    android:textSize="16dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="130dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="cari info"
+                    android:fontFamily="@font/abeezee_reguler"
+                    android:textColor="@color/white"
+                    android:textSize="12dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="150dp"/>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:text="Untuk Anda"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:fontFamily="@font/abeezee_reguler"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="30dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="-20dp">
+
+                <ImageView
+                    android:id="@+id/rekomendasi_1"
+                    android:layout_width="150dp"
+                    android:layout_height="190dp"
+                    android:scaleType="fitXY"
+                    tools:src="@tools:sample/avatars"/>
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="189dp"
+                    android:src="@drawable/rectangular"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/desawisata_name"
+                    android:layout_marginTop="200dp"
+                    android:layout_marginStart="10dp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/abeezee_reguler"/>
+
+                <ImageView
+                    android:id="@+id/rekomendasi_2"
+                    android:layout_width="150dp"
+                    android:layout_height="190dp"
+                    android:layout_alignParentEnd="true"
+                    android:scaleType="fitXY"
+                    tools:src="@tools:sample/avatars"/>
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="189dp"
+                    android:src="@drawable/rectangular" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Desa Wisata Garut"
+                    android:layout_marginTop="200dp"
+                    android:layout_marginStart="195dp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/abeezee_reguler"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="75dp"
+                android:background="@color/green_606">
+
+                <ImageView
+                    android:id="@+id/icon_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="170dp"
+                    android:src="@drawable/ic_baseline_format_list_bulleted_24"
+                    app:showAsAction="always"/>
+
+                <ImageView
+                    android:id="@+id/icon_setting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_toEndOf="@+id/icon_list"
+                    android:layout_marginStart="20dp"
+                    android:src="@drawable/ic_baseline_settings_24"
+                    app:showAsAction="always"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
